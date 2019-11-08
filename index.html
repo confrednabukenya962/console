@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form> 
+        <label>Username:</label> <input type="text" name="username" id="username" ><br><br>
+        <label>Password:</label> <input type="password" name="password" id="pass"><br><br>
+        <input type="submit" value="send" onclick="statusscorer();">
+    </form>
+    <script>
+
+        function logmein(){
+    let usernam =document.getElementById('username').value;
+    let password =document.getElementById('pass').value;
+    if((usernam=="nabukenya"&&password=="english")||(usernam=="nabyonga"&&password=="set")){
+        window.open("index.html");
+    }else if(usernam==""&&password==""){
+        alert("you can submit empty field");
+    }else{
+        alert("wrong username or password");
+    }
+        }
+ function statusscorer(){
+ score2=prompt("Enter your marks");
+passmark=50;
+if(score2<passmark){
+alert("you have failed");
+}else if(score2>100){
+alert("you can't score2 100%");
+            }else{
+alert("you have passed");
+}
+}
+
+function greet(){
+let name=prompt("what is your name");
+let greeting=("how are you");
+alert(name+ "" +greeting);
+}
+    </script>
+</body>
+</html>
